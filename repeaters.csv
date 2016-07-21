@@ -1,0 +1,464 @@
+<pre>** 
+			SELECT * FROM
+            	(SELECT *  FROM `e107_repeater`
+				   ) as tmp
+				left join `e107_repeater_band` on tmp.repeater_band_fk=repeater_band_id
+				left join `e107_repeater_channel` on tmp.repeater_channel_fk=repeater_channelID
+				left join `e107_repeater_type` on tmp.repeater_type_fk=repeater_type_id
+				left join `e107_repeater_region` on tmp.repeater_region_fk=repeater_region_id
+				left join `e107_repeater_ctcss` on tmp.repeater_ctcss_fk=repeater_ctcss_id
+				left join `e107_repeater_status` on tmp.repeater_status_fk=repeater_status_id
+				 WHERE repeater_id > 0 
+				 ORDER BY repeater_callsign
+				 </pre><br />
+#,Freq,Mode,Shift,Offset,"TX Freq",Enc/Dec,Tone,Code,Show,Name,Power,Scan,Clk,Step,Scan2,Scan3,Scan4,Scan5,Scan6,Description,"BANK 1","BANK 2","BANK 3","BANK 4","BANK 5","BANK 6","BANK 7","BANK 8","BANK 9",BANK10,BANK11,BANK12,BANK13,BANK14,BANK15,BANK16,BANK17,BANK18,BANK19,BANK20,BANK21,BANK22,BANK23,BANK24,PRFRQ,SMSQL,RXATT,ELL,Masked,Internet,DCSinv
+1,"145.0625 ",FM,Minus,0,"145.6625 ",OFF,94.8,023,,GB3AA,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL, , IO81RO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+2,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,94.8,023,,GB3AC,HIGH,,OFF,"12.5 K",,,,,,", LYDNEY GLOS, , IO81SR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+3,"51.2200 ",FM,Minus,0,"50.7200 ",OFF,94.8,023,,GB3AE,HIGH,,OFF,"12.5 K",,,,,,", TENBY, , IO71PR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+4,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,94.8,023,,GB3AG,HIGH,,OFF,"12.5 K",,,,,,", FORFAR, , IO86ON, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+5,"434.8750 ",FM,Minus,0,"433.2750 ",OFF,94.8,023,,GB3AH,HIGH,,OFF,"12.5 K",,,,,,", EAST DEREHAM, , JO02KP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+6,"1,277.3500 ",FM,Minus,0,"1,297.3500 ",OFF,94.8,023,,GB3AK,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL, , IO81RO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+7,"145.1375 ",FM,Minus,0,"145.7375 ",OFF,77.0,023,,GB3AL,HIGH,,OFF,"12.5 K",,,,,,", AMERSHAM, , IO91QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+8,"51.3400 ",FM,Minus,0,"50.8400 ",OFF,77.0,023,,GB3AM,HIGH,,OFF,"12.5 K",,,,,,", AMERSHAM, , IO91QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+9,"434.8000 ",FM,Minus,0,"433.2000 ",OFF,110.9,023,,GB3AN,HIGH,,OFF,"12.5 K",,,,,,", AMLWCH, , IO73UJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+10,"145.0125 ",FM,Minus,0,"145.6125 ",OFF,94.8,023,,GB3AP,HIGH,,OFF,"12.5 K",,,,,,", HAVERFORDWEST, , IO71OV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+11,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,110.9,023,,GB3AR,HIGH,,OFF,"12.5 K",,,,,,", CAERNARFON, , IO73VC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+12,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,77.0,023,,GB3AS,HIGH,,OFF,"12.5 K",,,,,,", CARLISLE, , IO84LS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+13,"434.7750 ",FM,Minus,0,"433.1750 ",OFF,82.5,023,,GB3AU,HIGH,,OFF,"12.5 K",,,,,,", AMERSHAM, , IO91QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+14,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,118.8,023,,GB3AV,HIGH,,OFF,"12.5 K",,,,,,", AYLESBURY, , IO91OT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+15,"434.8500 ",FM,Minus,0,"433.2500 ",OFF,71.9,023,,GB3AW,HIGH,,OFF,"12.5 K",,,,,,", NEWBURY, , IO91HH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+16,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,103.5,023,,GB3AY,HIGH,,OFF,"12.5 K",,,,,,", DALRY, , IO75OR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+17,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,94.8,023,,GB3BB,HIGH,,OFF,"12.5 K",,,,,,", BRECON, , IO81HW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+18,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,94.8,023,,GB3BC,HIGH,,OFF,"12.5 K",,,,,,", PONTYPRIDD, , IO81IO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+19,"438.4625 ",FM,Minus,0,"430.8625 ",OFF,118.8,023,,GB3BE,HIGH,,OFF,"12.5 K",,,,,,", DUNS, , IO85SS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+20,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,77.0,023,,GB3BF,HIGH,,OFF,"12.5 K",,,,,,", BEDFORD, , IO92SD, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+21,"434.8250 ",FM,Minus,0,"433.2250 ",OFF,94.8,023,,GB3BG,HIGH,,OFF,"12.5 K",,,,,,", BLAENAVON, , IO81KS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+22,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,67.0,023,,GB3BI,HIGH,,OFF,"12.5 K",,,,,,", INVERNESS, , IO77WO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+23,"1,293.8500 ",FM,Minus,0,"1,299.8500 ",OFF,103.5,023,,GB3BK,HIGH,,OFF,"12.5 K",,,,,,", BROMLEY, , JO01AK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+24,"434.7750 ",FM,Minus,0,"433.1750 ",OFF,77.0,023,,GB3BL,HIGH,,OFF,"12.5 K",,,,,,", BEDFORD, , IO92SD, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+25,"145.1125 ",FM,Minus,0,"145.7125 ",OFF,67.0,023,,GB3BM,HIGH,,OFF,"12.5 K",,,,,,", BIRMINGHAM, , IO92BL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+26,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,118.8,023,,GB3BN,HIGH,,OFF,"12.5 K",,,,,,", BRACKNELL, , IO91OJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+27,"434.7500 ",FM,Minus,0,"433.1500 ",OFF,88.5,023,,GB3BR,HIGH,,OFF,"12.5 K",,,,,,", BRIGHTON, , IO90WT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+28,"438.4500 ",FM,Minus,0,"430.8500 ",OFF,118.8,023,,GB3BS,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL CITY, , IO81TK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+29,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,118.8,023,,GB3BT,HIGH,,OFF,"12.5 K",,,,,,", BERWICK ON TWEED, , IO85WT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+30,"434.6250 ",FM,Minus,0,"433.0250 ",OFF,118.8,023,,GB3BV,HIGH,,OFF,"12.5 K",,,,,,", HEMEL HEMPSTEAD, , IO91SR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+31,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,,023,,GB3BX,HIGH,,OFF,"12.5 K",,,,,,", MUCH WENLOCK, , IO82QN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+32,"438.4500 ",FM,Minus,0,"430.8500 ",OFF,110.9,023,,GB3BZ,HIGH,,OFF,"12.5 K",,,,,,", BRAINTREE, , JO01GW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+33,"434.9250 ",FM,Minus,0,"433.3250 ",OFF,77.0,023,,GB3CA,HIGH,,OFF,"12.5 K",,,,,,", CARLISLE, , IO84OT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+34,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,67.0,023,,GB3CB,HIGH,,OFF,"12.5 K",,,,,,", BIRMINGHAM, , IO92BL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+35,"438.5625 ",FM,Minus,0,"430.9625 ",OFF,88.5,023,,GB3CC,HIGH,,OFF,"12.5 K",,,,,,", CHICHESTER, , IO90RM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+36,"145.0875 ",FM,Minus,0,"145.6875 ",OFF,118.8,023,,GB3CD,HIGH,,OFF,"12.5 K",,,,,,", CROOK, , IO94DR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+37,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,110.9,023,,GB3CE,HIGH,,OFF,"12.5 K",,,,,,", COLCHESTER, , JO01KV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+38,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,77.0,023,,GB3CF,HIGH,,OFF,"12.5 K",,,,,,", MARKFIELD  LEICESTER, , IO92IQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+39,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,118.8,023,,GB3CG,HIGH,,OFF,"12.5 K",,,,,,", GLOUCESTER, , IO81VU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+40,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,77.0,023,,GB3CH,HIGH,,OFF,"12.5 K",,,,,,", LISKEARD, , IO70SM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+41,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,77.0,023,,GB3CI,HIGH,,OFF,"12.5 K",,,,,,", CORBY, , IO92PM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+42,"29.5400 ",FM,Minus,0,"29.6400 ",OFF,77.0,023,,GB3CJ,HIGH,,OFF,"12.5 K",,,,,,", NORTHAMPTON, , IO92NF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+43,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,103.5,023,,GB3CK,HIGH,,OFF,"12.5 K",,,,,,", CHARING KENT, , JO01JF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+44,"434.8250 ",FM,Minus,0,"433.2250 ",OFF,103.5,023,,GB3CL,HIGH,,OFF,"12.5 K",,,,,,", CLACTON, , JO01OT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+45,"434.8000 ",FM,Minus,0,"433.2000 ",OFF,94.8,023,,GB3CM,HIGH,,OFF,"12.5 K",,,,,,", CARMARTHEN, , IO71VW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+46,"145.0625 ",FM,Minus,0,"145.6625 ",OFF,77.0,023,,GB3CO,HIGH,,OFF,"12.5 K",,,,,,", CORBY, , IO92PM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+47,"145.1375 ",FM,Minus,0,"145.7375 ",OFF,110.9,023,,GB3CP,HIGH,,OFF,"12.5 K",,,,,,", FERMANAGH, , IO64IG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+48,"434.7500 ",FM,Minus,0,"433.1500 ",OFF,110.9,023,,GB3CR,HIGH,,OFF,"12.5 K",,,,,,", CAERGWRLE, , IO83LC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+49,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,103.5,023,,GB3CS,HIGH,,OFF,"12.5 K",,,,,,", KILSYTH, , IO75XX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+50,"51.3500 ",FM,Minus,0,"50.8500 ",OFF,77.0,023,,GB3CT,HIGH,,OFF,"12.5 K",,,,,,", NORTHAMPTON, , IO92MG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+51,"434.8250 ",FM,Minus,0,"433.2250 ",OFF,67.0,023,,GB3CV,HIGH,,OFF,"12.5 K",,,,,,", COVENTRY, , IO92GK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+52,"434.7000 ",FM,Minus,0,"433.1000 ",OFF,103.5,023,,GB3CW,HIGH,,OFF,"12.5 K",,,,,,", NEWTOWN POWYS, , IO82HL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+53,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,110.9,023,,GB3DA,HIGH,,OFF,"12.5 K",,,,,,", DANBURY, , JO01GR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+54,"51.2700 ",FM,Minus,0,"50.7700 ",OFF,110.9,023,,GB3DB,HIGH,,OFF,"12.5 K",,,,,,", DANBURY, , JO01HR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+55,"145.0875 ",FM,Minus,0,"145.6875 ",OFF,71.9,023,,GB3DC,HIGH,,OFF,"12.5 K",,,,,,", DERBY, , IO92GW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+56,"434.8500 ",FM,Minus,0,"433.2500 ",OFF,94.8,023,,GB3DD,HIGH,,OFF,"12.5 K",,,,,,", DUNDEE, , IO86MM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+57,"434.7750 ",FM,Minus,0,"433.1750 ",OFF,110.9,023,,GB3DE,HIGH,,OFF,"12.5 K",,,,,,", IPSWICH, , JO02NF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+58,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,103.5,023,,GB3DG,HIGH,,OFF,"12.5 K",,,,,,", NEWTON STEWART, , IO74UV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+59,"434.7500 ",FM,Minus,0,"433.1500 ",OFF,118.8,023,,GB3DI,HIGH,,OFF,"12.5 K",,,,,,", DIDCOT, , IO91IN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+60,"438.5250 ",FM,Minus,0,"430.9250 ",OFF,103.5,023,,GB3DM,HIGH,,OFF,"12.5 K",,,,,,", DUMBARTON, , IO75RW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+61,"438.5250 ",FM,Minus,0,"430.9250 ",OFF,103.5,023,,GB3DM,HIGH,,OFF,"12.5 K",,,,,,", DUMBARTON, , IO75RW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+62,"145.0375 ",FM,Minus,0,"145.6375 ",OFF,77.0,023,,GB3DN,HIGH,,OFF,"12.5 K",,,,,,", STIBB CROSS, , IO70UW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+63,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,77.0,023,,GB3DQ,HIGH,,OFF,"12.5 K",,,,,,", POLPERRO, , IO70RI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+64,"145.1375 ",FM,Minus,0,"145.7375 ",OFF,71.9,023,,GB3DR,HIGH,,OFF,"12.5 K",,,,,,", DORCHESTER, , IO80QR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+65,"434.9250 ",FM,Minus,0,"433.3250 ",OFF,71.9,023,,GB3DS,HIGH,,OFF,"12.5 K",,,,,,", WORKSOP, , IO93KH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+66,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,71.9,023,,GB3DT,HIGH,,OFF,"12.5 K",,,,,,", BLANDFORD CAMP, , IO80WU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+67,"145.1625 ",FM,Minus,0,"145.7625 ",OFF,118.8,023,,GB3DU,HIGH,,OFF,"12.5 K",,,,,,", DUNS, , IO85SS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+68,"434.6250 ",FM,Minus,0,"433.0250 ",OFF,71.9,023,,GB3DV,HIGH,,OFF,"12.5 K",,,,,,", MALTBY, , IO93JK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+69,"145.0625 ",FM,Minus,0,"145.6625 ",OFF,,023,,GB3DW,HIGH,,OFF,"12.5 K",,,,,,", CRICCIETH, , IO72VW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+70,"434.9000 ",FM,Minus,0,"433.3000 ",OFF,110.9,023,,GB3DX,HIGH,,OFF,"12.5 K",,,,,,", LONDONDERRY, , IO65HA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+71,"434.8500 ",FM,Minus,0,"433.2500 ",OFF,71.9,023,,GB3DY,HIGH,,OFF,"12.5 K",,,,,,", WIRKSWORTH, , IO93FB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+72,"145.0875 ",FM,Minus,0,"145.6875 ",OFF,110.9,023,,GB3EA,HIGH,,OFF,"12.5 K",,,,,,", WICKHAMBROOK, , JO02GE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+73,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,88.5,023,,GB3EB,HIGH,,OFF,"12.5 K",,,,,,", EASTBOURNE, , JO00DT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+74,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,94.8,023,,GB3ED,HIGH,,OFF,"12.5 K",,,,,,", EDINBURGH, , IO85JW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+75,"434.9000 ",FM,Minus,0,"433.3000 ",OFF,71.9,023,,GB3EE,HIGH,,OFF,"12.5 K",,,,,,", CHESTERFIELD, , IO93FE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+76,"51.2200 ",FM,Minus,0,"50.7200 ",OFF,110.9,023,,GB3EF,HIGH,,OFF,"12.5 K",,,,,,", STOWMARKET, , JO02NF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+77,"434.8000 ",FM,Minus,0,"433.2000 ",OFF,67.0,023,,GB3EH,HIGH,,OFF,"12.5 K",,,,,,", EDGE HILL, , IO92GC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+78,"438.4875 ",FM,Minus,0,"430.8875 ",OFF,103.5,023,,GB3EK,HIGH,,OFF,"12.5 K",,,,,,", MARGATE, , JO01QJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+79,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,82.5,023,,GB3EL,HIGH,,OFF,"12.5 K",,,,,,", LONDON, , JO01AM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+80,"434.6750 ",FM,Minus,0,"433.0750 ",OFF,110.9,023,,GB3ER,HIGH,,OFF,"12.5 K",,,,,,", DANBURY, , JO01GR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+81,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,103.5,023,,GB3ES,HIGH,,OFF,"12.5 K",,,,,,", HASTINGS, , JO00HV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+82,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,77.0,023,,GB3EV,HIGH,,OFF,"12.5 K",,,,,,", DUFTON, , IO84SQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+83,"145.0125 ",FM,Minus,0,"145.6125 ",OFF,77.0,023,,GB3EW,HIGH,,OFF,"12.5 K",,,,,,", EXETER, , IO80FR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+84,"438.5500 ",FM,Minus,0,"430.9500 ",OFF,77.0,023,,GB3EX,HIGH,,OFF,"12.5 K",,,,,,", SILVERTON, , IN89GW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+85,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,110.9,023,,GB3EZ,HIGH,,OFF,"12.5 K",,,,,,", WICKHAMBROOK, , JO02GE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+86,"438.4500 ",FM,Minus,0,"430.8500 ",OFF,82.5,023,,GB3FC,HIGH,,OFF,"12.5 K",,,,,,", BLACKPOOL, , IO83LU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+87,"145.0625 ",FM,Minus,0,"145.6625 ",OFF,103.5,023,,GB3FE,HIGH,,OFF,"12.5 K",,,,,,", STIRLING, , IO86BC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+88,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,103.5,023,,GB3FF,HIGH,,OFF,"12.5 K",,,,,,", KELTY, , IO86GC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+89,"145.1125 ",FM,Minus,0,"145.7125 ",OFF,94.8,023,,GB3FG,HIGH,,OFF,"12.5 K",,,,,,", CARMARTHEN, , IO71WW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+90,"51.2700 ",FM,Minus,0,"50.7700 ",OFF,77.0,023,,GB3FH,HIGH,,OFF,"12.5 K",,,,,,", SOMERSET, , IO81OH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+91,"438.5250 ",FM,Minus,0,"430.9250 ",OFF,77.0,023,,GB3FI,HIGH,,OFF,"12.5 K",,,,,,", CHEDDAR, , IO81OH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+92,"438.5500 ",FM,Minus,0,"430.9500 ",OFF,71.9,023,,GB3FJ,HIGH,,OFF,"12.5 K",,,,,,", ASGARBY, , IO93XE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+93,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,103.5,023,,GB3FK,HIGH,,OFF,"12.5 K",,,,,,", FOLKESTONE, , JO01OC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+94,"1,291.0500 ",FM,Minus,0,"1,297.0500 ",OFF,,023,,GB3FM,HIGH,,OFF,"12.5 K",,,,,,", FARNHAM, , IO91OF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+95,"434.9750 ",FM,Minus,0,"433.3750 ",OFF,82.5,023,,GB3FN,HIGH,,OFF,"12.5 K",,,,,,", FARNHAM, , IO91OF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+96,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,71.9,023,,GB3FR,HIGH,,OFF,"12.5 K",,,,,,", SPILSBY LINCS., , JO03AE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+97,"51.3100 ",FM,Minus,0,"50.8100 ",OFF,82.5,023,,GB3FX,HIGH,,OFF,"12.5 K",,,,,,", FARNHAM, , IO91OF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+98,"434.9000 ",FM,Minus,0,"433.3000 ",OFF,67.0,023,,GB3GB,HIGH,,OFF,"12.5 K",,,,,,", BIRMINGHAM, , IO92BN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+99,"51.2300 ",FM,Minus,0,"50.7300 ",OFF,77.0,023,,GB3GC,HIGH,,OFF,"12.5 K",,,,,,", GUNNISLAKE, , IO70WN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+100,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,110.9,023,,GB3GD,HIGH,,OFF,"12.5 K",,,,,,", SNAEFELL IOM, , IO74SG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+101,"434.9000 ",FM,Minus,0,"433.3000 ",OFF,88.5,023,,GB3GF,HIGH,,OFF,"12.5 K",,,,,,", GUILDFORD, , IO91RF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+102,"434.7250 ",FM,Minus,0,"433.1250 ",OFF,118.8,023,,GB3GH,HIGH,,OFF,"12.5 K",,,,,,", GLOUCESTER, , IO81VU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+103,"145.0375 ",FM,Minus,0,"145.6375 ",OFF,,023,,GB3GJ,HIGH,,OFF,"12.5 K",,,,,,", ST HELIER, , IN89WE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+104,"438.5000 ",FM,Minus,0,"430.9000 ",OFF,103.5,023,,GB3GL,HIGH,,OFF,"12.5 K",,,,,,", GLASGOW, , IO75WU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+105,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,67.0,023,,GB3GN,HIGH,,OFF,"12.5 K",,,,,,", BANCHORY, , IO87TA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+106,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,110.9,023,,GB3GO,HIGH,,OFF,"12.5 K",,,,,,", LLANDUDNO, , IO83BH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+107,"438.5375 ",FM,Minus,0,"430.9375 ",OFF,71.9,023,,GB3GR,HIGH,,OFF,"12.5 K",,,,,,", GRANTHAM, , IO92RV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+108,"51.3300 ",FM,Minus,0,"50.8300 ",OFF,103.5,023,,GB3GT,HIGH,,OFF,"12.5 K",,,,,,", LUDLOW, , IO82QJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+109,"434.9250 ",FM,Minus,0,"433.3250 ",OFF,71.9,023,,GB3GU,HIGH,,OFF,"12.5 K",,,,,,", GUERNSEY, , IN89RK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+110,"29.5900 ",FM,Minus,0,"29.6900 ",OFF,103.5,023,,GB3GX,HIGH,,OFF,"12.5 K",,,,,,", LUDLOW, , IO82QJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+111,"434.8750 ",FM,Minus,0,"433.2750 ",OFF,88.5,023,,GB3GY,HIGH,,OFF,"12.5 K",,,,,,", GRIMSBY, , IO93XN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+112,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,118.8,023,,GB3HA,HIGH,,OFF,"12.5 K",,,,,,", HEXHAM, , IO85XA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+113,"434.9750 ",FM,Minus,0,"433.3750 ",OFF,77.0,023,,GB3HB,HIGH,,OFF,"12.5 K",,,,,,", ST AUSTELL, , IO70OJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+114,"434.7500 ",FM,Minus,0,"433.1500 ",OFF,118.8,023,,GB3HC,HIGH,,OFF,"12.5 K",,,,,,", HEREFORD, , IO82PB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+115,"434.8250 ",FM,Minus,0,"433.2250 ",OFF,82.5,023,,GB3HD,HIGH,,OFF,"12.5 K",,,,,,", HUDDERSFIELD, , IO93BP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+116,"438.5250 ",FM,Minus,0,"430.9250 ",OFF,103.5,023,,GB3HE,HIGH,,OFF,"12.5 K",,,,,,", HASTINGS, , JO00HV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+117,"51.2600 ",FM,Minus,0,"50.7600 ",OFF,71.9,023,,GB3HF,HIGH,,OFF,"12.5 K",,,,,,", BARNSLEY, , IO93HO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+118,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,88.5,023,,GB3HG,HIGH,,OFF,"12.5 K",,,,,,", THIRSK, , IO94JF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+119,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,71.9,023,,GB3HH,HIGH,,OFF,"12.5 K",,,,,,", BUXTON, , IO93BF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+120,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,103.5,023,,GB3HI,HIGH,,OFF,"12.5 K",,,,,,", ISLE OF MULL, , IO76DK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+121,"434.6250 ",FM,Minus,0,"433.0250 ",OFF,118.8,023,,GB3HJ,HIGH,,OFF,"12.5 K",,,,,,", HARROGATE, , IO94EB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+122,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,118.8,023,,GB3HK,HIGH,,OFF,"12.5 K",,,,,,", SELKIRK, , IO85ON, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+123,"51.3200 ",FM,Minus,0,"50.8200 ",OFF,71.9,023,,GB3HM,HIGH,,OFF,"12.5 K",,,,,,", BELPER, , IO93GA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+124,"434.8750 ",FM,Minus,0,"433.2750 ",OFF,82.5,023,,GB3HN,HIGH,,OFF,"12.5 K",,,,,,", HITCHIN, , IO91VW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+125,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,82.5,023,,GB3HR,HIGH,,OFF,"12.5 K",,,,,,", HARROW, , IO91TO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+126,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,88.5,023,,GB3HS,HIGH,,OFF,"12.5 K",,,,,,", WALKINGTON, , IO93RT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+127,"434.8750 ",FM,Minus,0,"433.2750 ",OFF,77.0,023,,GB3HT,HIGH,,OFF,"12.5 K",,,,,,", HINCKLEY, , IO92HN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+128,"434.9250 ",FM,Minus,0,"433.3250 ",OFF,110.9,023,,GB3HW,HIGH,,OFF,"12.5 K",,,,,,", ROMFORD, , JO01CO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+129,"434.7250 ",FM,Minus,0,"433.1250 ",OFF,67.0,023,,GB3IC,HIGH,,OFF,"12.5 K",,,,,,", WOLVERHAMPTON, , IO82WO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+130,"438.4500 ",FM,Minus,0,"430.8500 ",OFF,77.0,023,,GB3IE,HIGH,,OFF,"12.5 K",,,,,,", PLYMOUTH, , IO70XJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+131,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,88.5,023,,GB3IG,HIGH,,OFF,"12.5 K",,,,,,", STORNOWAY, , IO68QE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+132,"434.7000 ",FM,Minus,0,"433.1000 ",OFF,110.9,023,,GB3IH,HIGH,,OFF,"12.5 K",,,,,,", IPSWICH, , JO02OB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+133,"145.1625 ",FM,Minus,0,"145.7625 ",OFF,103.5,023,,GB3IK,HIGH,,OFF,"12.5 K",,,,,,", ROCHESTER, , JO01FJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+134,"438.4250 ",FM,Minus,0,"430.8250 ",OFF,110.9,023,,GB3IM-C,HIGH,,OFF,"12.5 K",,,,,,", DOUGLAS  IOM, , IO74SD, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+135,"438.4250 ",FM,Minus,0,"430.8250 ",OFF,71.9,023,,GB3IM-R,HIGH,,OFF,"12.5 K",,,,,,", RAMSEY  IOM, , IO74TI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+136,"434.7250 ",FM,Minus,0,"433.1250 ",OFF,110.9,023,,GB3IM-S,HIGH,,OFF,"12.5 K",,,,,,", DOUGLAS  IOM, , IO74SG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+137,"145.0375 ",FM,Minus,0,"145.6375 ",OFF,71.9,023,,GB3IN,HIGH,,OFF,"12.5 K",,,,,,", MATLOCK, , IO93GD, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+138,"145.1625 ",FM,Minus,0,"145.7625 ",OFF,103.5,023,,GB3IP,HIGH,,OFF,"12.5 K",,,,,,", STAFFORD, , IO82WS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+139,"145.1625 ",FM,Minus,0,"145.7625 ",OFF,88.5,023,,GB3IR,HIGH,,OFF,"12.5 K",,,,,,", RICHMOND YORKS, , IO94DJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+140,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,88.5,023,,GB3IS,HIGH,,OFF,"12.5 K",,,,,,", BROADFORD, , IO77BF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+141,"434.8250 ",FM,Minus,0,"433.2250 ",OFF,71.9,023,,GB3IW,HIGH,,OFF,"12.5 K",,,,,,", RYDE, , IO90JQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+142,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,103.5,023,,GB3JB,HIGH,,OFF,"12.5 K",,,,,,", MERE WILTSHIRE, , IO81VC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+143,"438.5000 ",FM,Minus,0,"430.9000 ",OFF,94.8,023,,GB3JC,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+144,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,77.0,023,,GB3JL,HIGH,,OFF,"12.5 K",,,,,,", LISKEARD, , IO70SM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+145,"434.6250 ",FM,Minus,0,"433.0250 ",OFF,94.8,023,,GB3JS,HIGH,,OFF,"12.5 K",,,,,,", GREAT YARMOUTH  , , JO02UO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+146,"51.3300 ",FM,Minus,0,"50.8300 ",OFF,94.8,023,,GB3JX,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+147,"438.5000 ",FM,Minus,0,"430.9000 ",OFF,67.0,023,,GB3KC,HIGH,,OFF,"12.5 K",,,,,,", STOURBRIDGE, , IO82WK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+148,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,118.8,023,,GB3KD,HIGH,,OFF,"12.5 K",,,,,,", KIDDERMINSTER, , IO82UJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+149,"145.0875 ",FM,Minus,0,"145.6875 ",OFF,103.5,023,,GB3KE,HIGH,,OFF,"12.5 K",,,,,,", GLASGOW, , IO75UV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+150,"145.0625 ",FM,Minus,0,"145.6625 ",OFF,103.5,023,,GB3KI,HIGH,,OFF,"12.5 K",,,,,,", HERNE BAY, , JO01NI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+151,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,110.9,023,,GB3KK,HIGH,,OFF,"12.5 K",,,,,,", BALLYCASTLE, , IO65VE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+152,"434.7000 ",FM,Minus,0,"433.1000 ",OFF,94.8,023,,GB3KL,HIGH,,OFF,"12.5 K",,,,,,", KINGS LYNN, , JO02FR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+153,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,103.5,023,,GB3KN,HIGH,,OFF,"12.5 K",,,,,,", MAIDSTONE, , JO01GH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+154,"434.6750 ",FM,Minus,0,"433.0750 ",OFF,67.0,023,,GB3KR,HIGH,,OFF,"12.5 K",,,,,,", KIDDERMINSTER, , IO82UJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+155,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,103.5,023,,GB3KS,HIGH,,OFF,"12.5 K",,,,,,", DOVER, , JO01PA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+156,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,103.5,023,,GB3KV,HIGH,,OFF,"12.5 K",,,,,,", KILSYTH, , IO75XX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+157,"145.1125 ",FM,Minus,0,"145.7125 ",OFF,94.8,023,,GB3KY,HIGH,,OFF,"12.5 K",,,,,,", KINGS LYNN, , JO02FS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+158,"145.1125 ",FM,Minus,0,"145.7125 ",OFF,103.5,023,,GB3LA,HIGH,,OFF,"12.5 K",,,,,,", SANQUHAR, , IO85CJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+159,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,118.8,023,,GB3LB,HIGH,,OFF,"12.5 K",,,,,,", LAUDER, , IO85NS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+160,"434.8250 ",FM,Minus,0,"433.2250 ",OFF,71.9,023,,GB3LC,HIGH,,OFF,"12.5 K",,,,,,", LOUTH, , IO93WH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+161,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,110.9,023,,GB3LD,HIGH,,OFF,"12.5 K",,,,,,", LANCASTER, , IO84OA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+162,"434.7000 ",FM,Minus,0,"433.1000 ",OFF,77.0,023,,GB3LE,HIGH,,OFF,"12.5 K",,,,,,", MARKFIELD  LEICESTER, , IO92IQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+163,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,110.9,023,,GB3LF,HIGH,,OFF,"12.5 K",,,,,,", KENDAL, , IO84PH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+164,"434.9750 ",FM,Minus,0,"433.3750 ",OFF,103.5,023,,GB3LH,HIGH,,OFF,"12.5 K",,,,,,", SHREWSBURY, , IO82OP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+165,"434.8500 ",FM,Minus,0,"433.2500 ",OFF,82.5,023,,GB3LI,HIGH,,OFF,"12.5 K",,,,,,", LIVERPOOL, , IO83LL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+166,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,110.9,023,,GB3LL,HIGH,,OFF,"12.5 K",,,,,,", LLANDUDNO, , IO83BH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+167,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,71.9,023,,GB3LM,HIGH,,OFF,"12.5 K",,,,,,", LINCOLN, , IO93RF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+168,"51.2500 ",FM,Minus,0,"50.7500 ",OFF,77.0,023,,GB3LP,HIGH,,OFF,"12.5 K",,,,,,", LIVERPOOL, , IO83MK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+169,"438.4625 ",FM,Minus,0,"430.8625 ",OFF,88.5,023,,GB3LR,HIGH,,OFF,"12.5 K",,,,,,", NEWHAVEN, , JO00AS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+170,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,71.9,023,,GB3LS,HIGH,,OFF,"12.5 K",,,,,,", LINCOLN, , IO93RF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+171,"434.8500 ",FM,Minus,0,"433.2500 ",OFF,77.0,023,,GB3LT,HIGH,,OFF,"12.5 K",,,,,,", LUTON, , IO91SV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+172,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,77.0,023,,GB3LU,HIGH,,OFF,"12.5 K",,,,,,", SHETLAND, , IP90JD, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+173,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,82.5,023,,GB3LV,HIGH,,OFF,"12.5 K",,,,,,", NORTH LONDON, , IO91XP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+174,"438.5000 ",FM,Minus,0,"430.9000 ",OFF,82.5,023,,GB3LW,HIGH,,OFF,"12.5 K",,,,,,", LONDON, , IO91WM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+175,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,110.9,023,,GB3LY,HIGH,,OFF,"12.5 K",,,,,,", LIMAVADY  N.I, , IO65NC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+176,"434.6250 ",FM,Minus,0,"433.0250 ",OFF,82.5,023,,GB3MA,HIGH,,OFF,"12.5 K",,,,,,", BURY, , IO83UO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+177,"438.4500 ",FM,Minus,0,"430.8500 ",OFF,71.9,023,,GB3MD,HIGH,,OFF,"12.5 K",,,,,,", MANSFIELD, , IO93KD, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+178,"434.7500 ",FM,Minus,0,"433.1500 ",OFF,67.0,023,,GB3ME,HIGH,,OFF,"12.5 K",,,,,,", RUGBY, , IO92JJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+179,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,103.5,023,,GB3MF,HIGH,,OFF,"12.5 K",,,,,,", MACCLESFIELD, , IO83WG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+180,"438.5000 ",FM,Minus,0,"430.9000 ",OFF,94.8,023,,GB3MG,HIGH,,OFF,"12.5 K",,,,,,", PONTYPRIDD, , IO81IO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+181,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,88.5,023,,GB3MH,HIGH,,OFF,"12.5 K",,,,,,", EAST GRINSTEAD, , IO91WC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+182,"145.1125 ",FM,Minus,0,"145.7125 ",OFF,82.5,023,,GB3MI,HIGH,,OFF,"12.5 K",,,,,,", MANCHESTER, , IO83VM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+183,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,77.0,023,,GB3MK,HIGH,,OFF,"12.5 K",,,,,,", MILTON KEYNES, , IO92OB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+184,"1,291.1500 ",FM,Minus,0,"1,297.1500 ",OFF,67.0,023,,GB3MM,HIGH,,OFF,"12.5 K",,,,,,", WOLVERHAMPTON, , IO82XP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+185,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,82.5,023,,GB3MN,HIGH,,OFF,"12.5 K",,,,,,", DISLEY, , IO83XH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+186,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,110.9,023,,GB3MP,HIGH,,OFF,"12.5 K",,,,,,", DENBIGH, , IO83IF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+187,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,82.5,023,,GB3MR,HIGH,,OFF,"12.5 K",,,,,,", STOCKPORT, , IO83XH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+188,"434.7750 ",FM,Minus,0,"433.1750 ",OFF,67.0,023,,GB3MS,HIGH,,OFF,"12.5 K",,,,,,", WORCESTER, , IO82VE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+189,"438.5000 ",FM,Minus,0,"430.9000 ",OFF,110.9,023,,GB3MT,HIGH,,OFF,"12.5 K",,,,,,", MAGHERAFELT, , IO64QS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+190,"434.8500 ",FM,Minus,0,"433.2500 ",OFF,67.0,023,,GB3MW,HIGH,,OFF,"12.5 K",,,,,,", LEAMINGTON SPA, , IO92FH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+191,"145.0125 ",FM,Minus,0,"145.6125 ",OFF,71.9,023,,GB3NA,HIGH,,OFF,"12.5 K",,,,,,", SHEFFIELD, , IO93GK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+192,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,94.8,023,,GB3NB,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02PN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+193,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,77.0,023,,GB3NC,HIGH,,OFF,"12.5 K",,,,,,", ST AUSTELL, , IO70OJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+194,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,77.0,023,,GB3ND,HIGH,,OFF,"12.5 K",,,,,,", BIDEFORD, , IO71VA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+195,"145.1625 ",FM,Minus,0,"145.7625 ",OFF,118.8,023,,GB3NE,HIGH,,OFF,"12.5 K",,,,,,", NEWBURY, , IO91HJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+196,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,77.0,023,,GB3NF,HIGH,,OFF,"12.5 K",,,,,,", NOTTINGHAM, , IO92KX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+197,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,67.0,023,,GB3NG,HIGH,,OFF,"12.5 K",,,,,,", FRASERBURGH, , IO87XO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+198,"434.6750 ",FM,Minus,0,"433.0750 ",OFF,77.0,023,,GB3NH,HIGH,,OFF,"12.5 K",,,,,,", NORTHAMPTON, , IO92NF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+199,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,110.9,023,,GB3NI,HIGH,,OFF,"12.5 K",,,,,,", BELFAST  N.I., , IO74CO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+200,"434.7000 ",FM,Minus,0,"433.1000 ",OFF,103.5,023,,GB3NK,HIGH,,OFF,"12.5 K",,,,,,", ERITH, , JO01BL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+201,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,82.5,023,,GB3NL,HIGH,,OFF,"12.5 K",,,,,,", NORTH LONDON, , IO91XP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+202,"434.7750 ",FM,Minus,0,"433.1750 ",OFF,71.9,023,,GB3NM,HIGH,,OFF,"12.5 K",,,,,,", NOTTINGHAM, , IO92KX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+203,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,94.8,023,,GB3NN,HIGH,,OFF,"12.5 K",,,,,,", WELLS NORFOLK, , JO02JV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+204,"1,291.0000 ",FM,Minus,0,"1,297.0000 ",OFF,94.8,023,,GB3NO,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02PP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+205,"438.4875 ",FM,Minus,0,"430.8875 ",OFF,77.0,023,,GB3NP,HIGH,,OFF,"12.5 K",,,,,,", TOWCESTER, , IO92LD, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+206,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,94.8,023,,GB3NR,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02PP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+207,"430.6750 ",FM,Minus,0,"439.6750 ",OFF,82.5,023,,GB3NS,HIGH,,OFF,"12.5 K",,,,,,", CATERHAM, , IO91WG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+208,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,118.8,023,,GB3NT,HIGH,,OFF,"12.5 K",,,,,,", NEWCASTLE/TYNE, , IO94FW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+209,"438.4875 ",FM,Minus,0,"430.8875 ",OFF,94.8,023,,GB3NU,HIGH,,OFF,"12.5 K",,,,,,", SHERINGHAM, , JO02OW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+210,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,67.0,023,,GB3NW,HIGH,,OFF,"12.5 K",,,,,,", WORCESTER, , IO82VE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+211,"438.4500 ",FM,Minus,0,"430.8500 ",OFF,88.5,023,,GB3NX,HIGH,,OFF,"12.5 K",,,,,,", CRAWLEY SUSSEX, , IO91WB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+212,"438.4250 ",FM,Minus,0,"430.8250 ",OFF,88.5,023,,GB3NY,HIGH,,OFF,"12.5 K",,,,,,", BRIDLINGTON, , IO94VC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+213,"145.0125 ",FM,Minus,0,"145.6125 ",OFF,82.5,023,,GB3OA,HIGH,,OFF,"12.5 K",,,,,,", SOUTHPORT, , IO83LP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+214,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,77.0,023,,GB3OC,HIGH,,OFF,"12.5 K",,,,,,", KIRKWALL, , IO88LX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+215,"438.5500 ",FM,Minus,0,"430.9500 ",OFF,94.8,023,,GB3OH,HIGH,,OFF,"12.5 K",,,,,,", LINLITHGOW, , IO85EX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+216,"430.5125 ",FM,Minus,0,"439.5125 ",OFF,82.5,023,,GB3OK,HIGH,,OFF,"12.5 K",,,,,,", BROMLEY, , JO01BJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+217,"438.5500 ",FM,Minus,0,"430.9500 ",OFF,110.9,023,,GB3OM,HIGH,,OFF,"12.5 K",,,,,,", OMAGH, , IO64JQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+218,"434.7250 ",FM,Minus,0,"433.1250 ",OFF,94.8,023,,GB3OV,HIGH,,OFF,"12.5 K",,,,,,", ST NEOTS, , IO92VG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+219,"438.5500 ",FM,Minus,0,"430.9500 ",OFF,82.5,023,,GB3OY,HIGH,,OFF,"12.5 K",,,,,,", BUCKHURST HILL, , JO01AO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+220,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,103.5,023,,GB3PA,HIGH,,OFF,"12.5 K",,,,,,", PAISLEY, , IO75QV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+221,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,71.9,023,,GB3PC,HIGH,,OFF,"12.5 K",,,,,,", PORTSMOUTH, , IO90KT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+222,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,94.8,023,,GB3PE,HIGH,,OFF,"12.5 K",,,,,,", PETERBOROUGH, , IO92TN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+223,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,77.0,023,,GB3PI,HIGH,,OFF,"12.5 K",,,,,,", ROYSTON, , IO92XA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+224,"145.0625 ",FM,Minus,0,"145.6625 ",OFF,110.9,023,,GB3PK,HIGH,,OFF,"12.5 K",,,,,,", BALLYCASTLE NI, , IO65WE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+225,"145.1625 ",FM,Minus,0,"145.7625 ",OFF,77.0,023,,GB3PL,HIGH,,OFF,"12.5 K",,,,,,", E.CORNWALL, , IO70VM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+226,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,110.9,023,,GB3PO,HIGH,,OFF,"12.5 K",,,,,,", IPSWICH, , JO02OB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+227,"434.9750 ",FM,Minus,0,"433.3750 ",OFF,82.5,023,,GB3PP,HIGH,,OFF,"12.5 K",,,,,,", PRESTON, , IO83PS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+228,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,94.8,023,,GB3PR,HIGH,,OFF,"12.5 K",,,,,,", PERTH, , IO86GI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+229,"1,291.0750 ",FM,Minus,0,"1,297.0750 ",OFF,77.0,023,,GB3PS,HIGH,,OFF,"12.5 K",,,,,,", ROYSTON, , IO92XA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+230,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,94.8,023,,GB3PU,HIGH,,OFF,"12.5 K",,,,,,", PERTH, , IO86GI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+231,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,103.5,023,,GB3PW,HIGH,,OFF,"12.5 K",,,,,,", NEWTOWN POWYS, , IO82HL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+232,"51.2800 ",FM,Minus,0,"50.7800 ",OFF,77.0,023,,GB3PX,HIGH,,OFF,"12.5 K",,,,,,", ROYSTON, , IO92XA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+233,"434.8000 ",FM,Minus,0,"433.2000 ",OFF,77.0,023,,GB3PY,HIGH,,OFF,"12.5 K",,,,,,", CAMBRIDGE, , JO02AF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+234,"438.5000 ",FM,Minus,0,"430.9000 ",OFF,82.5,023,,GB3PZ,HIGH,,OFF,"12.5 K",,,,,,", DUKINFIELD, , IO83XL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+235,"145.0375 ",FM,Minus,0,"145.6375 ",OFF,103.5,023,,GB3RA,HIGH,,OFF,"12.5 K",,,,,,", LLANDRINDOD WELLS, , IO82JH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+236,"434.8000 ",FM,Minus,0,"433.2000 ",OFF,71.9,023,,GB3RB,HIGH,,OFF,"12.5 K",,,,,,", BOLSOVER, , IO93IF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+237,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,118.8,023,,GB3RD,HIGH,,OFF,"12.5 K",,,,,,", READING, , IO91JM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+238,"434.8750 ",FM,Minus,0,"433.2750 ",OFF,103.5,023,,GB3RE,HIGH,,OFF,"12.5 K",,,,,,", MAIDSTONE, , JO01HH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+239,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,82.5,023,,GB3RF,HIGH,,OFF,"12.5 K",,,,,,", ACCRINGTON, , IO83TR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+240,"434.8750 ",FM,Minus,0,"433.2750 ",OFF,94.8,023,,GB3RH,HIGH,,OFF,"12.5 K",,,,,,", AXMINSTER, , IO80MS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+241,"434.8750 ",FM,Minus,0,"433.2750 ",OFF,118.8,023,,GB3RU,HIGH,,OFF,"12.5 K",,,,,,", READING, , IO91LK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+242,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,118.8,023,,GB3SB,HIGH,,OFF,"12.5 K",,,,,,", SELKIRK, , IO85ON, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+243,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,71.9,023,,GB3SC,HIGH,,OFF,"12.5 K",,,,,,", BOURNEMOUTH, , IO90BR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+244,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,71.9,023,,GB3SD,HIGH,,OFF,"12.5 K",,,,,,", WEYMOUTH, , IO80SQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+245,"1,291.0750 ",FM,Minus,0,"1,297.0750 ",OFF,103.5,023,,GB3SE,HIGH,,OFF,"12.5 K",,,,,,", STOKE ON TRENT, , IO83WA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+246,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,77.0,023,,GB3SF,HIGH,,OFF,"12.5 K",,,,,,", SOUTH MOLTON, , IO81DA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+247,"434.9750 ",FM,Minus,0,"433.3750 ",OFF,94.8,023,,GB3SG,HIGH,,OFF,"12.5 K",,,,,,", PONTYPOOL, , IO81LR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+248,"145.0250 ",FM,Minus,0,"145.6250 ",OFF,77.0,023,,GB3SI,HIGH,,OFF,"12.5 K",,,,,,", HELSTON, , IO70IC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+249,"434.7500 ",FM,Minus,0,"433.1500 ",OFF,103.5,023,,GB3SK,HIGH,,OFF,"12.5 K",,,,,,", CANTERBURY, , JO01MH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+250,"51.2300 ",FM,Minus,0,"50.7300 ",OFF,103.5,023,,GB3SL,HIGH,,OFF,"12.5 K",,,,,,", KILSYTH, , IO75XX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+251,"434.9250 ",FM,Minus,0,"433.3250 ",OFF,103.5,023,,GB3SM,HIGH,,OFF,"12.5 K",,,,,,", STOKE ON TRENT, , IO93BA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+252,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,71.9,023,,GB3SN,HIGH,,OFF,"12.5 K",,,,,,", ALTON HANTS, , IO91LC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+253,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,71.9,023,,GB3SO,HIGH,,OFF,"12.5 K",,,,,,", SUTTON ON SEA, , JO03DH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+254,"434.7000 ",FM,Minus,0,"433.1000 ",OFF,94.8,023,,GB3SP,HIGH,,OFF,"12.5 K",,,,,,", PEMBROKE, , IO71OQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+255,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,67.0,023,,GB3SS,HIGH,,OFF,"12.5 K",,,,,,", ELGIN MORAY, , IO87MO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+256,"434.8250 ",FM,Minus,0,"433.2250 ",OFF,103.5,023,,GB3ST,HIGH,,OFF,"12.5 K",,,,,,", STOKE ON TRENT, , IO83WA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+257,"145.1125 ",FM,Minus,0,"145.7125 ",OFF,77.0,023,,GB3SW,HIGH,,OFF,"12.5 K",,,,,,", SIDMOUTH, , IO80JR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+258,"51.2900 ",FM,Minus,0,"50.7900 ",OFF,103.5,023,,GB3SX,HIGH,,OFF,"12.5 K",,,,,,", STOKE ON TRENT, , IO93BA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+259,"434.7500 ",FM,Minus,0,"433.1500 ",OFF,71.9,023,,GB3SY,HIGH,,OFF,"12.5 K",,,,,,", BARNSLEY, , IO93HN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+260,"434.9750 ",FM,Minus,0,"433.3750 ",OFF,71.9,023,,GB3SZ,HIGH,,OFF,"12.5 K",,,,,,", BOURNEMOUTH, , IO90BR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+261,"145.1375 ",FM,Minus,0,"145.7375 ",OFF,67.0,023,,GB3TA,HIGH,,OFF,"12.5 K",,,,,,", TAMWORTH, , IO92DP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+262,"434.6750 ",FM,Minus,0,"433.0750 ",OFF,118.8,023,,GB3TD,HIGH,,OFF,"12.5 K",,,,,,", SWINDON, , IO91DL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+263,"434.8000 ",FM,Minus,0,"433.2000 ",OFF,103.5,023,,GB3TF,HIGH,,OFF,"12.5 K",,,,,,", LITTLE WENLOCK, , IO82RP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+264,"434.9750 ",FM,Minus,0,"433.3750 ",OFF,67.0,023,,GB3TH,HIGH,,OFF,"12.5 K",,,,,,", TAMWORTH, , IO92DP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+265,"434.9000 ",FM,Minus,0,"433.3000 ",OFF,118.8,023,,GB3TJ,HIGH,,OFF,"12.5 K",,,,,,", CORBRIDGE, , IO85XA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+266,"145.0125 ",FM,Minus,0,"145.6125 ",OFF,77.0,023,,GB3TO,HIGH,,OFF,"12.5 K",,,,,,", NORTHAMPTON, , IO92NE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+267,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,82.5,023,,GB3TP,HIGH,,OFF,"12.5 K",,,,,,", KEIGHLEY, , IO93BV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+268,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,94.8,023,,GB3TR,HIGH,,OFF,"12.5 K",,,,,,", TORQUAY, , IO80FM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+269,"434.7750 ",FM,Minus,0,"433.1750 ",OFF,118.8,023,,GB3TS,HIGH,,OFF,"12.5 K",,,,,,", SUNDERLAND, , IO94GX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+270,"434.8250 ",FM,Minus,0,"433.2250 ",OFF,77.0,023,,GB3TU,HIGH,,OFF,"12.5 K",,,,,,", TRING HERTS, , IO91PS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+271,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,118.8,023,,GB3TW,HIGH,,OFF,"12.5 K",,,,,,", GATESHEAD, , IO94EW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+272,"29.5500 ",FM,Minus,0,"29.6500 ",OFF,94.8,023,,GB3TX,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02PP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+273,"51.2800 ",FM,Minus,0,"50.7800 ",OFF,110.9,023,,GB3TY,HIGH,,OFF,"12.5 K",,,,,,", CARRICKFERGUS, , IO74BS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+274,"434.7000 ",FM,Minus,0,"433.1000 ",OFF,118.8,023,,GB3UB,HIGH,,OFF,"12.5 K",,,,,,", BATH AVON, , IO81UJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+275,"434.6250 ",FM,Minus,0,"433.0250 ",OFF,67.0,023,,GB3UI,HIGH,,OFF,"12.5 K",,,,,,", BIRMIMGHAM, , IO92CK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+276,"438.4625 ",FM,Minus,0,"430.8625 ",OFF,103.5,023,,GB3UK,HIGH,,OFF,"12.5 K",,,,,,", CHELTENHAM, , IO81XW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+277,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,110.9,023,,GB3UL,HIGH,,OFF,"12.5 K",,,,,,", BELFAST  N.I., , IO74CO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+278,"51.2400 ",FM,Minus,0,"50.7400 ",OFF,77.0,023,,GB3UM,HIGH,,OFF,"12.5 K",,,,,,", MARKFIELD  LEICESTER, , IO92IQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+279,"438.4250 ",FM,Minus,0,"430.8250 ",OFF,110.9,023,,GB3UO,HIGH,,OFF,"12.5 K",,,,,,", CHIRK, , IO82LW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+280,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,103.5,023,,GB3US,HIGH,,OFF,"12.5 K",,,,,,", SHEFFIELD, , IO93GJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+281,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,118.8,023,,GB3VA,HIGH,,OFF,"12.5 K",,,,,,", BRILL, , IO91LT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+282,"434.7000 ",FM,Minus,0,"433.1000 ",OFF,77.0,023,,GB3VE,HIGH,,OFF,"12.5 K",,,,,,", DUFTON, , IO84SQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+283,"434.9250 ",FM,Minus,0,"433.3250 ",OFF,82.5,023,,GB3VH,HIGH,,OFF,"12.5 K",,,,,,", WELWYN G CITY, , IO91VT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+284,"51.3600 ",FM,Minus,0,"50.8600 ",OFF,67.0,023,,GB3VI,HIGH,,OFF,"12.5 K",,,,,,", BIRMINGHAM, , IO92BJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+285,"145.0125 ",FM,Minus,0,"145.6125 ",OFF,103.5,023,,GB3VM,HIGH,,OFF,"12.5 K",,,,,,", LUDLOW, , IO82PH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+286,"438.5250 ",FM,Minus,0,"430.9250 ",OFF,103.5,023,,GB3VN,HIGH,,OFF,"12.5 K",,,,,,", LUDLOW, , IO82QI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+287,"434.6750 ",FM,Minus,0,"433.0750 ",OFF,94.8,023,,GB3VS,HIGH,,OFF,"12.5 K",,,,,,", TAUNTON, , IO80LX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+288,"145.1250 ",FM,Minus,0,"145.7250 ",OFF,103.5,023,,GB3VT,HIGH,,OFF,"12.5 K",,,,,,", STOKE ON TRENT, , IO83WA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+289,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,94.8,023,,GB3VW,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+290,"438.4750 ",FM,Minus,0,"430.8750 ",OFF,103.5,023,,GB3WA,HIGH,,OFF,"12.5 K",,,,,,", DALRY, , IO75OR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+291,"434.9000 ",FM,Minus,0,"433.3000 ",OFF,94.8,023,,GB3WB,HIGH,,OFF,"12.5 K",,,,,,", WESTON-S-MARE, , IO81MH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+292,"1,291.3750 ",FM,Minus,0,"1,297.3750 ",OFF,82.5,023,,GB3WC,HIGH,,OFF,"12.5 K",,,,,,", HUDDERSFIELD, , IO93EP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+293,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,77.0,023,,GB3WD,HIGH,,OFF,"12.5 K",,,,,,", PLYMOUTH, , IO70WJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+294,"145.0875 ",FM,Minus,0,"145.6875 ",OFF,94.8,023,,GB3WE,HIGH,,OFF,"12.5 K",,,,,,", WESTON-S-MARE, , IO81MH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+295,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,82.5,023,,GB3WF,HIGH,,OFF,"12.5 K",,,,,,", OTLEY, , IO93DV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+296,"434.7500 ",FM,Minus,0,"433.1500 ",OFF,94.8,023,,GB3WG,HIGH,,OFF,"12.5 K",,,,,,", PORT TALBOT, , IO81CP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+297,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,118.8,023,,GB3WH,HIGH,,OFF,"12.5 K",,,,,,", SWINDON, , IO91EM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+298,"434.9750 ",FM,Minus,0,"433.3750 ",OFF,94.8,023,,GB3WI,HIGH,,OFF,"12.5 K",,,,,,", WISBECH, , JO02CP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+299,"434.7250 ",FM,Minus,0,"433.1250 ",OFF,88.5,023,,GB3WJ,HIGH,,OFF,"12.5 K",,,,,,", SCUNTHORPE, , IO93QN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+300,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,67.0,023,,GB3WK,HIGH,,OFF,"12.5 K",,,,,,", LEAMINGTON SPA, , IO92FH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+301,"438.5500 ",FM,Minus,0,"430.9500 ",OFF,67.0,023,,GB3WL,HIGH,,OFF,"12.5 K",,,,,,", BIRMINGHAM, , IO92BJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+302,"434.6000 ",FM,Minus,0,"433.0000 ",OFF,67.0,023,,GB3WN,HIGH,,OFF,"12.5 K",,,,,,", WOLVERHAMPTON, , IO82XP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+303,"438.5375 ",FM,Minus,0,"430.9375 ",OFF,82.5,023,,GB3WP,HIGH,,OFF,"12.5 K",,,,,,", HYDE, , IO83XL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+304,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,94.8,023,,GB3WR,HIGH,,OFF,"12.5 K",,,,,,", WELLS, , IO81PH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+305,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,88.5,023,,GB3WS,HIGH,,OFF,"12.5 K",,,,,,", CRAWLEY SUSSEX, , IO91WB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+306,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,110.9,023,,GB3WT,HIGH,,OFF,"12.5 K",,,,,,", OMAGH N.I, , IO64JQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+307,"438.4250 ",FM,Minus,0,"430.8250 ",OFF,118.8,023,,GB3WU,HIGH,,OFF,"12.5 K",,,,,,", WORCESTER, , IO82VE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+308,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,94.8,023,,GB3WW,HIGH,,OFF,"12.5 K",,,,,,", PORT TALBOT, , IO81CP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+309,"50.5200 ",FM,Minus,0,"29.2100 ",OFF,77.0,023,,GB3WX-10,HIGH,,OFF,"12.5 K",,,,,,", MERE WILTSHIRE, , IO81VC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+310,"29.2100 ",FM,Minus,0,"50.5200 ",OFF,77.0,023,,GB3WX-6,HIGH,,OFF,"12.5 K",,,,,,", MERE WILTSHIRE, , IO81VC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+311,"51.3000 ",FM,Minus,0,"50.8000 ",OFF,82.5,023,,GB3WY,HIGH,,OFF,"12.5 K",,,,,,", HUDDERSFIELD, , IO93EP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+312,"51.2300 ",FM,Minus,0,"50.7300 ",OFF,71.9,023,,GB3XD,HIGH,,OFF,"12.5 K",,,,,,", LOUTH, , IO93WH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+313,"438.4875 ",FM,Minus,0,"430.8875 ",OFF,82.5,023,,GB3XL,HIGH,,OFF,"12.5 K",,,,,,", SHIPLEY, , IO93CT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+314,"438.5250 ",FM,Minus,0,"430.9250 ",OFF,71.9,023,,GB3XN,HIGH,,OFF,"12.5 K",,,,,,", WORKSOP, , IO93KI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+315,"145.0875 ",FM,Minus,0,"145.6875 ",OFF,82.5,023,,GB3XP,HIGH,,OFF,"12.5 K",,,,,,", MORDEN, , IO91VJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+316,"434.9250 ",FM,Minus,0,"433.3250 ",OFF,77.0,023,,GB3XX,HIGH,,OFF,"12.5 K",,,,,,", DAVENTRY, , IO92KG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+317,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,88.5,023,,GB3YC,HIGH,,OFF,"12.5 K",,,,,,", DRIFFIELD, , IO94SC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+318,"434.9500 ",FM,Minus,0,"433.3500 ",OFF,94.8,023,,GB3YL,HIGH,,OFF,"12.5 K",,,,,,", LOWESTOFT, , JO02VL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+319,"434.6500 ",FM,Minus,0,"433.0500 ",OFF,77.0,023,,GB3YS,HIGH,,OFF,"12.5 K",,,,,,", YEOVIL, , IO80QW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+320,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,82.5,023,,GB3YW,HIGH,,OFF,"12.5 K",,,,,,", HUDDERSFIELD, , IO93EP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+321,"145.1375 ",FM,Minus,0,"145.7375 ",OFF,118.8,023,,GB3ZA,HIGH,,OFF,"12.5 K",,,,,,", HEREFORD, , IO82PB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+322,"438.4250 ",FM,Minus,0,"430.8250 ",OFF,77.0,023,,GB3ZB,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL, , IO81QJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+323,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,103.5,023,,GB3ZI,HIGH,,OFF,"12.5 K",,,,,,", STAFFORD, , IO82WT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+324,"51.3100 ",FM,Minus,0,"50.8100 ",OFF,103.5,023,,GB3ZW,HIGH,,OFF,"12.5 K",,,,,,", NEWTOWN POWYS, , IO82HL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+325,"438.4250 ",FM,Minus,0,"430.8250 ",OFF,88.5,023,,GB3ZX,HIGH,,OFF,"12.5 K",,,,,,", EASTBOURNE, , JO00CT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+326,"51.3000 ",FM,Minus,0,"50.8000 ",OFF,77.0,023,,GB3ZY,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL, , IO81QJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+327,"434.8000 ",FM,Minus,0,"433.2000 ",OFF,77.0,023,,GB40PY,HIGH,,OFF,"12.5 K",,,,,,", CAMBRIDGE, , JO02AF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+328,"430.6750 ",FM,Minus,0,"439.6750 ",OFF,,023,,GB7AA,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL, , IO81RO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+329,"430.9125 ",FM,Minus,0,"439.9125 ",OFF,,023,,GB7AD,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL, , IO81RO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+330,"430.7000 ",FM,Minus,0,"439.7000 ",OFF,,023,,GB7AU,HIGH,,OFF,"12.5 K",,,,,,", AMERSHAM, , IO91QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+331,"430.4375 ",FM,Minus,0,"439.4375 ",OFF,,023,,GB7AV,HIGH,,OFF,"12.5 K",,,,,,", AYLESBURY, , IO91OT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+332,"430.4500 ",FM,Minus,0,"439.4500 ",OFF,,023,,GB7BD,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL, , IO81PJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+333,"430.6625 ",FM,Minus,0,"439.6625 ",OFF,,023,,GB7BE,HIGH,,OFF,"12.5 K",,,,,,", BECCLES, , JO02TK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+334,"430.5750 ",FM,Minus,0,"439.5750 ",OFF,,023,,GB7BH,HIGH,,OFF,"12.5 K",,,,,,", BRIGHTON, , IO90WU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+335,"430.4000 ",FM,Minus,0,"439.4000 ",OFF,,023,,GB7BM,HIGH,,OFF,"12.5 K",,,,,,", BIRMINGHAM, , IO92BL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+336,"430.4500 ",FM,Minus,0,"439.4500 ",OFF,,023,,GB7BP,HIGH,,OFF,"12.5 K",,,,,,", MILTON KEYNES, , IO91PX, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+337,"430.1625 ",FM,Minus,0,"439.1625 ",OFF,,023,,GB7BS,HIGH,,OFF,"12.5 K",,,,,,", BRISTOL CITY, , IO81TK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+338,"430.4375 ",FM,Minus,0,"439.4375 ",OFF,,023,,GB7BX,HIGH,,OFF,"12.5 K",,,,,,", MUCH WENLOCK, , IO82QN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+339,"430.7000 ",FM,Minus,0,"439.7000 ",OFF,,023,,GB7CD,HIGH,,OFF,"12.5 K",,,,,,", CARDIFF, , IO81JL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+340,"430.5125 ",FM,Minus,0,"439.5125 ",OFF,,023,,GB7CF,HIGH,,OFF,"12.5 K",,,,,,", FOLKESTONE , , JO01OC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+341,"430.4750 ",FM,Minus,0,"439.4750 ",OFF,,023,,GB7CH,HIGH,,OFF,"12.5 K",,,,,,", LOUTH, , IO93WH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+342,"145.1000 ",FM,Minus,0,"145.7000 ",OFF,71.9,023,,GB7CM,HIGH,,OFF,"12.5 K",,,,,,", WIMBOURNE, , IO80XS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+343,"145.0375 ",FM,Minus,0,"145.6375 ",OFF,,023,,GB7CT,HIGH,,OFF,"12.5 K",,,,,,", TRING, , IO91PS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+344,"430.4000 ",FM,Minus,0,"439.4000 ",OFF,,023,,GB7CW,HIGH,,OFF,"12.5 K",,,,,,", BRIDGEND, , IO81EN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+345,"430.6625 ",FM,Minus,0,"439.6625 ",OFF,,023,,GB7DB,HIGH,,OFF,"12.5 K",,,,,,", AMPTHILL, , IO92RA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+346,"430.4875 ",FM,Minus,0,"439.4875 ",OFF,,023,,GB7DC,HIGH,,OFF,"12.5 K",,,,,,", DERBY, , IO92GW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+347,"430.6625 ",FM,Minus,0,"439.6625 ",OFF,,023,,GB7DD,HIGH,,OFF,"12.5 K",,,,,,", DUNDEE, , IO86NL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+348,"430.6000 ",FM,Minus,0,"439.6000 ",OFF,,023,,GB7DE-B,HIGH,,OFF,"12.5 K",,,,,,", UPPER LARGO, , IO86NF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+349,"145.0375 ",FM,Minus,0,"145.6375 ",OFF,,023,,GB7DE-C,HIGH,,OFF,"12.5 K",,,,,,", UPPER LARGO, , IO86NF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+350,"430.5375 ",FM,Minus,0,"439.5375 ",OFF,,023,,GB7DG,HIGH,,OFF,"12.5 K",,,,,,", BROMSGROVE, , IO82WI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+351,"430.9125 ",FM,Minus,0,"439.9125 ",OFF,,023,,GB7DK-B,HIGH,,OFF,"12.5 K",,,,,,", STRANRAER, , IO74LV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+352,"145.0875 ",FM,Minus,0,"145.6875 ",OFF,,023,,GB7DK-C,HIGH,,OFF,"12.5 K",,,,,,", STRANRAER, , IO74LV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+353,"430.4125 ",FM,Minus,0,"439.4125 ",OFF,,023,,GB7DN,HIGH,,OFF,"12.5 K",,,,,,", DUNGIVEN, , IO64MW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+354,"430.4250 ",FM,Minus,0,"439.4250 ",OFF,,023,,GB7DR,HIGH,,OFF,"12.5 K",,,,,,", POOLE, , IO90AR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+355,"430.4250 ",FM,Minus,0,"439.4250 ",OFF,,023,,GB7DS,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02PP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+356,"430.6125 ",FM,Minus,0,"439.6125 ",OFF,,023,,GB7DV,HIGH,,OFF,"12.5 K",,,,,,", ST. HELENS, , IO83QJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+357,"430.7000 ",FM,Minus,0,"439.7000 ",OFF,,023,,GB7DX,HIGH,,OFF,"12.5 K",,,,,,", WITTERSHAM, , JO01IA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+358,"430.5750 ",FM,Minus,0,"439.5750 ",OFF,,023,,GB7EB,HIGH,,OFF,"12.5 K",,,,,,", BECCLES, , JO02TK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+359,"430.6750 ",FM,Minus,0,"439.6750 ",OFF,,023,,GB7ED,HIGH,,OFF,"12.5 K",,,,,,", EXETER, , IO80GR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+360,"430.7125 ",FM,Minus,0,"439.7125 ",OFF,,023,,GB7EL,HIGH,,OFF,"12.5 K",,,,,,", NELSON, , IO83VT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+361,"430.5375 ",FM,Minus,0,"439.5375 ",OFF,,023,,GB7EN,HIGH,,OFF,"12.5 K",,,,,,", WELLINGBOROUGH, , IO92PH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+362,"430.4000 ",FM,Minus,0,"439.4000 ",OFF,,023,,GB7EP,HIGH,,OFF,"12.5 K",,,,,,", EPSOM, , IO91UI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+363,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,77.0,023,,GB7ER,HIGH,,OFF,"12.5 K",,,,,,", EXETER, , IO80GR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+364,"430.4375 ",FM,Minus,0,"439.4375 ",OFF,,023,,GB7ES,HIGH,,OFF,"12.5 K",,,,,,", EASTBOURNE, , JO00DT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+365,"430.7125 ",FM,Minus,0,"439.7125 ",OFF,,023,,GB7EX,HIGH,,OFF,"12.5 K",,,,,,", SOUTHEND-ON-SEA, , JO01GN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+366,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,,023,,GB7FC,HIGH,,OFF,"12.5 K",,,,,,", BLACKPOOL, , IO83LS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+367,"430.6125 ",FM,Minus,0,"439.6125 ",OFF,,023,,GB7FH,HIGH,,OFF,"12.5 K",,,,,,", FAREHAM, , IO90JU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+368,"430.7375 ",FM,Minus,0,"439.7375 ",OFF,,023,,GB7FK-B,HIGH,,OFF,"12.5 K",,,,,,", FOLKESTONE, , JO01OC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+369,"145.1875 ",FM,Minus,0,"145.7875 ",OFF,,023,,GB7FK-C,HIGH,,OFF,"12.5 K",,,,,,", FOLKESTONE, , JO01OC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+370,"430.6625 ",FM,Minus,0,"439.6625 ",OFF,,023,,GB7FW,HIGH,,OFF,"12.5 K",,,,,,", BIRMINGHAM, , IO92BL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+371,"430.4250 ",FM,Minus,0,"439.4250 ",OFF,,023,,GB7GB,HIGH,,OFF,"12.5 K",,,,,,", BIRMINGHAM, , IO91WM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+372,"430.4375 ",FM,Minus,0,"439.4375 ",OFF,,023,,GB7GC,HIGH,,OFF,"12.5 K",,,,,,", GRIMSBY, , IO92WN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+373,"145.0875 ",FM,Minus,0,"145.6875 ",OFF,,023,,GB7GD,HIGH,,OFF,"12.5 K",,,,,,", ABERDEEN, , IO87VD, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+374,"430.6875 ",FM,Minus,0,"439.6875 ",OFF,,023,,GB7GF,HIGH,,OFF,"12.5 K",,,,,,", GUILDFORD, , IO91RF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+375,"430.7125 ",FM,Minus,0,"439.7125 ",OFF,,023,,GB7GL,HIGH,,OFF,"12.5 K",,,,,,", MITCHELDEAN, , IO81SU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+376,"430.4125 ",FM,Minus,0,"439.4125 ",OFF,,023,,GB7GT,HIGH,,OFF,"12.5 K",,,,,,", LUDLOW, , IO82QJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+377,"430.4500 ",FM,Minus,0,"439.4500 ",OFF,,023,,GB7HD-B,HIGH,,OFF,"12.5 K",,,,,,", HUDDERSFIELD, , IO93DP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+378,"430.6375 ",FM,Minus,0,"439.6375 ",OFF,,023,,GB7HM,HIGH,,OFF,"12.5 K",,,,,,", CAERGWRIE, , IO83LC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+379,"430.4500 ",FM,Minus,0,"439.4500 ",OFF,,023,,GB7HR,HIGH,,OFF,"12.5 K",,,,,,", HEATHROW, , IO91SL, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+380,"430.4250 ",FM,Minus,0,"439.4250 ",OFF,,023,,GB7HS,HIGH,,OFF,"12.5 K",,,,,,", BATLEY, , IO93BR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+381,"430.4875 ",FM,Minus,0,"439.4875 ",OFF,,023,,GB7HU,HIGH,,OFF,"12.5 K",,,,,,", SOUTH CAVE, , IO93RS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+382,"430.5750 ",FM,Minus,0,"439.5750 ",OFF,,023,,GB7HX,HIGH,,OFF,"12.5 K",,,,,,", HUDDERSFIELD, , IO93BP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+383,"1,270.6500 ",FM,Minus,0,"1,290.6500 ",OFF,,023,,GB7IC-A,HIGH,,OFF,"12.5 K",,,,,,", HERNE BAY, , JO01NI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+384,"430.4500 ",FM,Minus,0,"439.4500 ",OFF,,023,,GB7IC-B,HIGH,,OFF,"12.5 K",,,,,,", HERNE BAY, , JO01NI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+385,"145.0625 ",FM,Minus,0,"145.6625 ",OFF,,023,,GB7IC-C,HIGH,,OFF,"12.5 K",,,,,,", HERNE BAY, , JO01NI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+386,"438.5750 ",FM,Minus,0,"430.9750 ",OFF,,023,,GB7ID,HIGH,,OFF,"12.5 K",,,,,,", REDHILL, , IO91WF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+387,"430.5375 ",FM,Minus,0,"439.5375 ",OFF,,023,,GB7IK,HIGH,,OFF,"12.5 K",,,,,,", ROCHESTER, , JO01FJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+388,"430.6125 ",FM,Minus,0,"439.6125 ",OFF,,023,,GB7IQ,HIGH,,OFF,"12.5 K",,,,,,", STAFFORD, , IO82WS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+389,"430.4625 ",FM,Minus,0,"439.4625 ",OFF,,023,,GB7JB,HIGH,,OFF,"12.5 K",,,,,,", MERE WILTSHIRE, , IO81VC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+390,"430.6375 ",FM,Minus,0,"439.6375 ",OFF,,023,,GB7JF,HIGH,,OFF,"12.5 K",,,,,,", NORTHAMPTON, , IO92NE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+391,"430.7125 ",FM,Minus,0,"439.7125 ",OFF,,023,,GB7JH-B,HIGH,,OFF,"12.5 K",,,,,,", SHOREHAM-BY-SEA, , IO90TT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+392,"145.0500 ",FM,Minus,0,"145.6500 ",OFF,,023,,GB7JH-C,HIGH,,OFF,"12.5 K",,,,,,", SHOREHAM-BY-SEA, , IO90TT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+393,"430.6125 ",FM,Minus,0,"439.6125 ",OFF,,023,,GB7KH,HIGH,,OFF,"12.5 K",,,,,,", KELVEDON HATCH, , JO01DQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+394,"430.6625 ",FM,Minus,0,"439.6625 ",OFF,,023,,GB7LE,HIGH,,OFF,"12.5 K",,,,,,", LEEDS, , IO93FU, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+395,"430.5375 ",FM,Minus,0,"439.5375 ",OFF,,023,,GB7LF,HIGH,,OFF,"12.5 K",,,,,,", LANCASTER, , IO84OA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+396,"430.4000 ",FM,Minus,0,"439.4000 ",OFF,,023,,GB7LN,HIGH,,OFF,"12.5 K",,,,,,", LINCOLN, , IO93RF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+397,"430.4000 ",FM,Minus,0,"439.4000 ",OFF,,023,,GB7LP,HIGH,,OFF,"12.5 K",,,,,,", LIVERPOOL, , IO83MK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+398,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,,023,,GB7MA,HIGH,,OFF,"12.5 K",,,,,,", BURY, , IO83UO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+399,"430.7000 ",FM,Minus,0,"439.7000 ",OFF,,023,,GB7MB,HIGH,,OFF,"12.5 K",,,,,,", HEYSHAM, , IO84NA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+400,"430.5375 ",FM,Minus,0,"439.5375 ",OFF,,023,,GB7MC,HIGH,,OFF,"12.5 K",,,,,,", ST AUSTELL, , IO70OJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+401,"430.6375 ",FM,Minus,0,"439.6375 ",OFF,,023,,GB7MH,HIGH,,OFF,"12.5 K",,,,,,", EAST GRINSTEAD, , IO91WC, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+402,"430.7375 ",FM,Minus,0,"439.7375 ",OFF,,023,,GB7MR,HIGH,,OFF,"12.5 K",,,,,,", MANCHESTER, , IO83XN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+403,"430.6875 ",FM,Minus,0,"439.6875 ",OFF,,023,,GB7NB,HIGH,,OFF,"12.5 K",,,,,,", NORWICH, , JO02PN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+404,"430.4500 ",FM,Minus,0,"439.4500 ",OFF,,023,,GB7NE,HIGH,,OFF,"12.5 K",,,,,,", ASHINGTON, , IO95FE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+405,"145.1500 ",FM,Minus,0,"145.7500 ",OFF,,023,,GB7NI,HIGH,,OFF,"12.5 K",,,,,,", CARRICKFERGUS, , IO74BS, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+406,"430.4625 ",FM,Minus,0,"439.4625 ",OFF,,023,,GB7NL,HIGH,,OFF,"12.5 K",,,,,,", EXETER, , IO80FR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+407,"430.4625 ",FM,Minus,0,"439.4625 ",OFF,,023,,GB7NM,HIGH,,OFF,"12.5 K",,,,,,", MANCHESTER, , IO83UN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+408,"430.1625 ",FM,Minus,0,"439.1625 ",OFF,,023,,GB7NS,HIGH,,OFF,"12.5 K",,,,,,", CATERHAM, , IO91WG, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+409,"430.5375 ",FM,Minus,0,"439.5375 ",OFF,,023,,GB7NU,HIGH,,OFF,"12.5 K",,,,,,", SHERINGHAM, , JO02OW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+410,"145.1125 ",FM,Minus,0,"145.7125 ",OFF,,023,,GB7OK,HIGH,,OFF,"12.5 K",,,,,,", BROMLEY, , JO01BJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+411,"145.0625 ",FM,Minus,0,"145.6625 ",OFF,,023,,GB7PB,HIGH,,OFF,"12.5 K",,,,,,", DURHAM, , IO94FT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+412,"145.1375 ",FM,Minus,0,"145.7375 ",OFF,,023,,GB7PD-C,HIGH,,OFF,"12.5 K",,,,,,", PEMBROKE DOCK, , IO71MQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+413,"430.9125 ",FM,Minus,0,"439.9125 ",OFF,,023,,GB7PI,HIGH,,OFF,"12.5 K",,,,,,", ROYSTON, , IO92XA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+414,"430.4250 ",FM,Minus,0,"439.4250 ",OFF,,023,,GB7PN,HIGH,,OFF,"12.5 K",,,,,,", PRESTATYN, , IO83HH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+415,"430.4375 ",FM,Minus,0,"439.4375 ",OFF,,023,,GB7PP,HIGH,,OFF,"12.5 K",,,,,,", IPSWICH, , JO02OB, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+416,"430.7125 ",FM,Minus,0,"439.7125 ",OFF,,023,,GB7PT,HIGH,,OFF,"12.5 K",,,,,,", ROYSTON, , IO92XA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+417,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,,023,,GB7RB-C,HIGH,,OFF,"12.5 K",,,,,,", COWBRIDGE, , IO81GK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+418,"145.0375 ",FM,Minus,0,"145.6375 ",OFF,,023,,GB7RN,HIGH,,OFF,"12.5 K",,,,,,", FAREHAM, , IO90JT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+419,"430.6000 ",FM,Minus,0,"439.6000 ",OFF,,023,,GB7RR,HIGH,,OFF,"12.5 K",,,,,,", NOTTINGHAM, , IO93KA, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+420,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,,023,,GB7RW,HIGH,,OFF,"12.5 K",,,,,,", WHITBY, , IO94SO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+421,"438.5500 ",FM,Minus,0,"430.9500 ",OFF,,023,,GB7RY,HIGH,,OFF,"12.5 K",,,,,,", RYE, , JO00HW, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+422,"145.0000 ",FM,Minus,0,"145.6000 ",OFF,,023,,GB7SB,HIGH,,OFF,"12.5 K",,,,,,", BRIGHTON, , IO90WT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+423,"430.4750 ",FM,Minus,0,"439.4750 ",OFF,,023,,GB7SC,HIGH,,OFF,"12.5 K",,,,,,", BOGNOR REGIS, , IO90QT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+424,"430.4125 ",FM,Minus,0,"439.4125 ",OFF,,023,,GB7SD,HIGH,,OFF,"12.5 K",,,,,,", WEYMOUTH, , IO80SQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+425,"430.4750 ",FM,Minus,0,"439.4750 ",OFF,,023,,GB7SE,HIGH,,OFF,"12.5 K",,,,,,", SOUTH OCKENDON, , JO01DM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+426,"145.1375 ",FM,Minus,0,"145.7375 ",OFF,,023,,GB7SF,HIGH,,OFF,"12.5 K",,,,,,", SHEFFIELD, , IO93GK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+427,"438.5625 ",FM,Minus,0,"430.9625 ",OFF,71.9,023,,GB7SH,HIGH,,OFF,"12.5 K",,,,,,", SHEFFIELD, , IO93GK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+428,"438.4750 ",FM,Minus,0,"430.8750 ",OFF,103.5,023,,GB7SJ,HIGH,,OFF,"12.5 K",,,,,,", NORTHWICH, , IO83RF, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+429,"430.6750 ",FM,Minus,0,"439.6750 ",OFF,,023,,GB7SN,HIGH,,OFF,"12.5 K",,,,,,", SHEFFIELD, , IO93GH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+430,"430.5750 ",FM,Minus,0,"439.5750 ",OFF,,023,,GB7SO,HIGH,,OFF,"12.5 K",,,,,,", SOLIHULL, , IO92BJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+431,"430.6375 ",FM,Minus,0,"439.6375 ",OFF,,023,,GB7SR,HIGH,,OFF,"12.5 K",,,,,,", SHEFFIELD, , IO93GK, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+432,"430.7375 ",FM,Minus,0,"439.7375 ",OFF,,023,,GB7SS,HIGH,,OFF,"12.5 K",,,,,,", HOCKLEY, , JO01HO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+433,"430.1625 ",FM,Minus,0,"439.1625 ",OFF,,023,,GB7TD,HIGH,,OFF,"12.5 K",,,,,,", HUDDERSFIELD, , IO93EP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+434,"145.1750 ",FM,Minus,0,"145.7750 ",OFF,,023,,GB7TE,HIGH,,OFF,"12.5 K",,,,,,", CLACTON ON SEA, , JO01OT, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+435,"430.6875 ",FM,Minus,0,"439.6875 ",OFF,,023,,GB7TP,HIGH,,OFF,"12.5 K",,,,,,", KEIGHLEY, , IO93BV, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+436,"438.4875 ",FM,Minus,0,"430.8875 ",OFF,94.8,023,,GB7TQ,HIGH,,OFF,"12.5 K",,,,,,", TORQUAY, , IO80FM, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+437,"430.4750 ",FM,Minus,0,"439.4750 ",OFF,,023,,GB7TV,HIGH,,OFF,"12.5 K",,,,,,", NEW MARSKE, , IO94LN, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+438,"430.7000 ",FM,Minus,0,"439.7000 ",OFF,,023,,GB7VO,HIGH,,OFF,"12.5 K",,,,,,", LEOMINSTER, , IO82PE, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+439,"430.4875 ",FM,Minus,0,"439.4875 ",OFF,,023,,GB7WB,HIGH,,OFF,"12.5 K",,,,,,", WESTON-S-MARE, , IO81MH, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+440,"430.4875 ",FM,Minus,0,"439.4875 ",OFF,,023,,GB7WC,HIGH,,OFF,"12.5 K",,,,,,", WARRINGTON, , IO83QI, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+441,"430.4875 ",FM,Minus,0,"439.4875 ",OFF,,023,,GB7WF,HIGH,,OFF,"12.5 K",,,,,,", BEWDLEY, , IO82UJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+442,"430.4125 ",FM,Minus,0,"439.4125 ",OFF,,023,,GB7WI,HIGH,,OFF,"12.5 K",,,,,,", WINTERTON, , IO93QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+443,"430.4625 ",FM,Minus,0,"439.4625 ",OFF,,023,,GB7WL,HIGH,,OFF,"12.5 K",,,,,,", AMERSHAM, , IO91QP, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+444,"430.9125 ",FM,Minus,0,"439.9125 ",OFF,,023,,GB7WP,HIGH,,OFF,"12.5 K",,,,,,", BIRKENHEAD, , IO83KJ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+445,"430.6000 ",FM,Minus,0,"439.6000 ",OFF,,023,,GB7WT,HIGH,,OFF,"12.5 K",,,,,,", OMAGH  N.I, , IO64HQ, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+446,"1,291.3000 ",FM,Minus,0,"1,297.3000 ",OFF,,023,,GB7YD-A,HIGH,,OFF,"12.5 K",,,,,,", BARNSLEY, , IO93HO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+447,"430.5125 ",FM,Minus,0,"439.5125 ",OFF,,023,,GB7YD-B,HIGH,,OFF,"12.5 K",,,,,,", BARNSLEY, , IO93HO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+448,"145.0750 ",FM,Minus,0,"145.6750 ",OFF,,023,,GB7YD-C,HIGH,,OFF,"12.5 K",,,,,,", BARNSLEY, , IO93HO, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+449,"430.4875 ",FM,Minus,0,"439.4875 ",OFF,,023,,GB7ZP,HIGH,,OFF,"12.5 K",,,,,,", DANBURY, , JO01HR, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN
+450,"0.0000 ",FM,Minus,0,"0.0000 ",OFF,,023,,repeater,HIGH,,OFF,"12.5 K",,,,,,", where, , locator, ",,,,,,,,,,,,,,,,,,,,,,,,,"1600 HZ",OFF,OFF,OFF,NO,OFF,RN-TN

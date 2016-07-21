@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="Repeater" lan="Repeater" version="2.0" date="2015-07-06" compatibility="2.0" installRequired="true" >
+	<author name="Barry Keal G4HDU" url="http://www.keal.me.uk" />
+	<summary>Repeater plugin</summary>
+	<description lan="LAN_REPEATER_DESC">A Repeater plugin to produce files for programming various rigs from UK repeater list.</description>
+	<category>Radio</category>
+	<keywords>
+		<word>repeater</word>
+		<word>ham radio</word>
+		<word>communications</word>
+	</keywords>
+	<adminLinks>
+		<link url='admin_config.php' description='Configure Repeater Plugin' icon='images/repeater_32.png' iconSmall='images/repeater_16.png' primary='true' >LAN_CONGIGURE</link>
+	</adminLinks>
+	<pluginPrefs>
+		<pref name="repeater_userclass">255</pref>
+
+	</pluginPrefs>
+</e107Plugin>
